@@ -84,9 +84,45 @@
         opacity: 1;
       }
     }
+    /* Navbar Styles */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgba(30, 30, 30, 0.0); /* Semi-transparent background */
+            padding: 10px 20px; /* Padding for the navbar */
+            position: fixed; /* Fixed position at the top */
+            width: 100%; /* Full width */
+            z-index: 1000; /* Ensure it appears above other elements */
+        }
+        #logo {
+            width: 120px; /* Logo size */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px; /* Space between links */
+        }
+        .nav-link {
+            color: #e0e0e0; /* Link color */
+            text-decoration: none; /* Remove underline */
+            font-weight: 600; /* Bold text */
+            transition: color 0.3s; /* Smooth transition for hover effect */
+        }
+        .nav-link:hover {
+            color: gold; /* Change color on hover */
+        }
   </style>
 </head>
 <body>
+  <nav>
+        <img src="images/logo.png" alt="Logo" id="logo">
+        <div class="nav-links">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">About</a>
+            <a href="#" class="nav-link">Contact</a>
+        </div>
+    </nav>
   <header>
     <h1>BADANG:<br>INSPIRASI DUNIA DIGITAL</h1>
   </header>
